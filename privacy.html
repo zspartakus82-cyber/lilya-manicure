@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Политика конфиденциальности · Лиля.Маникюр</title>
+  <meta name="description" content="Политика обработки персональных данных в соответствии с ФЗ-152.">
+  <meta name="robots" content="noindex,follow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+
+  <style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg:        #FBF5EC;
+    --bg-alt:    #F2E8DA;
+    --cream:     #FDF9F4;
+    --dark:      #2C1510;
+    --text:      #3D2017;
+    --muted:     #8C6A5E;
+    --rose:      #B46B55;
+    --rose-dark: #8F4D3A;
+    --rose-lite: #D4956A;
+    --gold:      #C4A472;
+    --hand:      'Caveat', cursive;
+    --serif:     'Cormorant Garamond', serif;
+    --body:      'Jost', sans-serif;
+    --ease:      0.3s ease;
+  }
+
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--body);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    font-weight: 400;
+    overflow-x: hidden;
+  }
+  a { text-decoration: none; color: inherit; }
+
+  /* ═══ HEADER ═══ */
+  .header {
+    position: sticky;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(251,245,236,.96);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow: 0 1px 0 rgba(44,21,16,.07);
+  }
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 16px;
+  }
+  .logo {
+    font-family: var(--hand);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark);
+    line-height: 1;
+  }
+  .logo em { font-style: normal; color: var(--rose); }
+
+  .back-link {
+    font-family: var(--hand);
+    font-size: 1.4rem;
+    background: var(--rose);
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 50px;
+    transition: background var(--ease), transform var(--ease);
+  }
+  .back-link:hover {
+    background: var(--rose-dark);
+    transform: translateY(-1px);
+  }
+
+  /* ═══ MAIN ═══ */
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 60px 24px 80px;
+  }
+  .page-title {
+    font-family: var(--hand);
+    font-size: clamp(2.8rem, 6vw, 4.2rem);
+    font-weight: 700;
+    color: var(--dark);
+    line-height: 1.15;
+    margin-bottom: 12px;
+  }
+  .page-sub {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.25rem;
+    color: var(--muted);
+    margin-bottom: 48px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid rgba(180,107,85,.18);
+  }
+  main h2 {
+    font-family: var(--serif);
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: var(--dark);
+    margin: 36px 0 14px;
+  }
+  main h2::before {
+    content: '✦';
+    color: var(--rose);
+    font-size: 0.7em;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  main p {
+    font-size: 1.05rem;
+    color: var(--text);
+    margin-bottom: 12px;
+  }
+  main ul {
+    list-style: none;
+    margin-bottom: 14px;
+    padding-left: 4px;
+  }
+  main ul li {
+    font-size: 1.05rem;
+    color: var(--text);
+    padding: 6px 0 6px 22px;
+    position: relative;
+  }
+  main ul li::before {
+    content: '·';
+    color: var(--rose);
+    font-size: 1.6rem;
+    position: absolute;
+    left: 4px;
+    top: -2px;
+    line-height: 1;
+  }
+  main strong { color: var(--dark); font-weight: 500; }
+  main a { color: var(--rose); border-bottom: 1px solid rgba(180,107,85,.3); }
+  main a:hover { color: var(--rose-dark); border-bottom-color: var(--rose-dark); }
+
+  .updated {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(180,107,85,.18);
+    font-size: 0.85rem;
+    color: var(--muted);
+    font-style: italic;
+    text-align: center;
+  }
+
+  /* ═══ FOOTER ═══ */
+  footer {
+    padding: 28px 24px;
+    text-align: center;
+    font-size: 1.05rem;
+    color: var(--muted);
+    background: var(--bg-alt);
+    border-top: 1px solid rgba(44,21,16,.06);
+  }
+  footer a { color: var(--rose); }
+
+  /* ═══ MOBILE ═══ */
+  @media (max-width: 600px) {
+    .header-inner { padding: 14px 18px; }
+    .logo { font-size: 1.7rem; }
+    .back-link { font-size: 1.2rem; padding: 6px 16px; }
+    main { padding: 40px 18px 60px; }
+    main h2 { font-size: 1.45rem; margin: 28px 0 10px; }
+    main p, main ul li { font-size: 1rem; }
+  }
+  </style>
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebPage",
+   "name":"Политика обработки персональных данных",
+   "description":"Политика конфиденциальности частного мастера маникюра Лили в соответствии с ФЗ-152.",
+   "inLanguage":"ru-RU",
+   "isPartOf":{"@type":"WebSite","name":"Лиля.Маникюр","url":"https://t.me/nail_master_vrn_bot"}}
+  </script>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">Лиля<em>·</em>маникюр</a>
+    <a href="index.html" class="back-link">← На главную</a>
+  </div>
+</header>
+
+<main>
+  <h1 class="page-title">Политика обработки персональных данных</h1>
+  <p class="page-sub">В соответствии с ФЗ-152 «О персональных данных»</p>
+
+  <h2>Кто обрабатывает данные</h2>
+  <p>Частный мастер маникюра Лиля. Адрес кабинета: г. Воронеж, ул. Суворова 122Б. Телефон: <a href="tel:+79081341660">+7 908 134 1660</a>.</p>
+
+  <h2>Какие данные собираем</h2>
+  <ul>
+    <li><strong>Имя</strong> — для обращения при записи</li>
+    <li><strong>Номер телефона</strong> — для связи и подтверждения записи</li>
+    <li><strong>Telegram ID</strong> — автоматически, для работы бота записи</li>
+  </ul>
+
+  <h2>Зачем используем данные</h2>
+  <ul>
+    <li>Подтверждение записи на услугу</li>
+    <li>Напоминания о визите (за 24 часа и за 2 часа)</li>
+    <li>Связь при необходимости перенести или отменить визит</li>
+  </ul>
+
+  <h2>Чего мы НЕ делаем</h2>
+  <ul>
+    <li>Не передаём данные третьим лицам</li>
+    <li>Не используем для рекламных рассылок</li>
+    <li>Не передаём другим бизнесам или партнёрам</li>
+  </ul>
+
+  <h2>Хранение и защита</h2>
+  <p>Данные хранятся локально в защищённой базе на устройстве мастера. Доступ к данным имеет только мастер.</p>
+
+  <h2>Удаление данных</h2>
+  <p>Вы можете запросить удаление своих данных в любой момент. Для этого напишите в Telegram-бот <a href="https://t.me/nail_master_vrn_bot" target="_blank" rel="noopener">@nail_master_vrn_bot</a> или позвоните по телефону <a href="tel:+79081341660">+7 908 134 1660</a>. Удаление производится в течение 3 рабочих дней.</p>
+
+  <h2>Основание обработки</h2>
+  <p>Согласие субъекта персональных данных (нажатие кнопки «Поделиться номером» в Telegram-боте записи).</p>
+  <p>Федеральный закон №152-ФЗ «О персональных данных», статья 6 пункт 5 и статья 22 пункт 2.</p>
+
+  <h2>Контакты для вопросов</h2>
+  <p>По любым вопросам, касающимся обработки данных:</p>
+  <ul>
+    <li>Telegram: <a href="https://t.me/nail_master_vrn_bot" target="_blank" rel="noopener">@nail_master_vrn_bot</a></li>
+    <li>Телефон: <a href="tel:+79081341660">+7 908 134 1660</a></li>
+  </ul>
+
+  <p class="updated">Дата последнего обновления: 02.05.2026</p>
+</main>
+
+<footer>
+  <p>© 2026 Лиля.Маникюр · Воронеж, ул. Суворова 122Б ·
+     <a href="https://t.me/nail_master_vrn_bot">@nail_master_vrn_bot</a> ·
+     <a href="tel:+79081341660">+7 908 134 1660</a>
+  </p>
+</footer>
+
+</body>
+</html>
