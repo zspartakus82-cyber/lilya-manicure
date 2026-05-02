@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Лиля · Маникюр в Воронеже — запись онлайн</title>
-  <meta name="description" content="Маникюр в Воронеже. Гель-лак, наращивание, укрепление. Запись через Telegram.">
-  <meta name="keywords" content="маникюр Воронеж, гель-лак, наращивание ногтей, маникюр недорого">
+  <meta name="description" content="Маникюр в Воронеже у частного мастера. Гель-лак, наращивание, укрепление. ул. Суворова 122Б (домашний кабинет). Запись через Telegram-бот. Опыт с 2018 года.">
+  <meta name="keywords" content="маникюр Воронеж, частный мастер маникюра Воронеж, маникюр на дому Воронеж, гель-лак Воронеж цены, маникюр Суворова, наращивание ногтей Воронеж, мастер маникюра Воронеж, комбинированный маникюр Воронеж, маникюр недорого">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -620,6 +620,55 @@
   }
 
   /* ═══════════════════════════════════════
+     WHY (УТП)
+  ═══════════════════════════════════════ */
+  .why { padding: 100px 0; }
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 8px;
+  }
+  .wcard {
+    background: #fff;
+    border-radius: 20px;
+    padding: 32px 24px 28px;
+    box-shadow: 0 4px 24px rgba(44,21,16,.06);
+    text-align: center;
+    transition: transform var(--ease), box-shadow var(--ease);
+  }
+  .wcard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 44px rgba(44,21,16,.12);
+  }
+  .wcard-icon {
+    font-size: 2.4rem;
+    line-height: 1;
+    margin-bottom: 14px;
+    display: block;
+  }
+  .wcard-title {
+    font-family: var(--hand);
+    font-size: 1.75rem;
+    color: var(--dark);
+    margin-bottom: 10px;
+    line-height: 1.15;
+  }
+  .wcard-text {
+    font-family: var(--body);
+    font-size: 1rem;
+    line-height: 1.65;
+    color: var(--text);
+  }
+
+  @media (max-width: 1000px) {
+    .why-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .why-grid { grid-template-columns: 1fr; max-width: 460px; margin: 8px auto 0; }
+  }
+
+  /* ═══════════════════════════════════════
      REVIEWS
   ═══════════════════════════════════════ */
   .reviews { padding: 100px 0; }
@@ -835,6 +884,7 @@
    "description":"Маникюр в Воронеже — гель-лак, наращивание, укрепление",
    "address":{"@type":"PostalAddress","streetAddress":"ул. Суворова 122Б","addressLocality":"Воронеж","addressCountry":"RU"},
    "openingHours":["Mo-Sa 09:00-20:00"],"priceRange":"₽₽",
+   "foundingDate":"2018",
    "url":"https://t.me/nail_master_vrn_bot"}
   </script>
 </head>
@@ -850,7 +900,7 @@
       <a href="#about">Обо мне</a>
       <a href="#reviews">Отзывы</a>
       <a href="#faq">Вопросы</a>
-      <a href="#booking" class="nav-cta">Записаться</a>
+      <a href="https://t.me/nail_master_vrn_bot" target="_blank" rel="noopener" class="nav-cta">Записаться</a>
     </nav>
     <button class="burger" id="brg" aria-label="Меню">
       <span></span><span></span><span></span>
@@ -862,7 +912,7 @@
     <a href="#about"    onclick="mm()">Обо мне</a>
     <a href="#reviews"  onclick="mm()">Отзывы</a>
     <a href="#faq"      onclick="mm()">Вопросы</a>
-    <a href="#booking"  onclick="mm()" style="color:var(--rose)">Записаться</a>
+    <a href="https://t.me/nail_master_vrn_bot" target="_blank" rel="noopener"  onclick="mm()" style="color:var(--rose)">Записаться</a>
   </div>
 </header>
 
@@ -881,13 +931,13 @@
           Запись через Telegram-бот или по телефону.
         </p>
         <div class="hero-btns">
-          <a href="#booking" class="btn">Записаться 💅</a>
+          <a href="https://t.me/nail_master_vrn_bot" target="_blank" rel="noopener" class="btn">Записаться 💅</a>
           <a href="tel:+79081341660" class="btn btn-phone">Позвонить ☎</a>
           <a href="#portfolio" class="hero-ghost">Смотреть работы →</a>
         </div>
         <div class="hero-stars">
           <span class="hero-stars-i">★★★★★</span>
-          <span class="hero-stars-t">3 000+ довольных клиентов</span>
+          <span class="hero-stars-t">Опыт работы с 2018 года</span>
         </div>
       </div>
 
@@ -979,7 +1029,7 @@
       </div>
     </div>
     <div class="sec-cta fi">
-      <a href="#booking" class="btn">Записаться на удобное время</a>
+      <a href="https://t.me/nail_master_vrn_bot" target="_blank" rel="noopener" class="btn">Записаться на удобное время</a>
       <a href="tel:+79081341660" class="btn btn-phone">Позвонить ☎</a>
     </div>
   </div>
@@ -1027,14 +1077,52 @@
           Работаю только с проверенными материалами премиум-класса.
           Стерильность инструментов — моё строгое правило.
           Каждый клиент для меня — особенный.
+          <br><br>
+          Принимаю в домашнем кабинете по адресу ул. Суворова 122Б в Воронеже.
+          Делаю классический и комбинированный маникюр, покрытие гель-лаком,
+          наращивание и укрепление ногтей. Запись — через
+          Telegram-бот <a href="https://t.me/nail_master_vrn_bot" target="_blank" rel="noopener" style="color:var(--rose);">@nail_master_vrn_bot</a>
+          или по телефону.
         </p>
         <div class="chips">
-          <span class="chip">✦ Опыт 5+ лет</span>
-          <span class="chip">✦ 3 000+ клиентов</span>
+          <span class="chip">✦ Опыт работы с 2018 года</span>
           <span class="chip">✦ Премиум-материалы</span>
           <span class="chip">✦ Стерильность</span>
           <span class="chip">✦ Индивидуально</span>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ ПОЧЕМУ КО МНЕ ВОЗВРАЩАЮТСЯ ════════════ -->
+<section class="why">
+  <div class="container">
+    <div class="sec-head fi">
+      <div class="label">Преимущества</div>
+      <h2 class="sec-title">Почему ко мне возвращаются</h2>
+      <p class="sec-sub">Что отличает работу частного мастера от салона</p>
+    </div>
+    <div class="why-grid fi">
+      <div class="wcard">
+        <span class="wcard-icon">🌿</span>
+        <div class="wcard-title">Без порезов и боли</div>
+        <p class="wcard-text">Аппаратная техника, мягкая работа с кутикулой. Чувствуется только лёгкая вибрация фрезы.</p>
+      </div>
+      <div class="wcard">
+        <span class="wcard-icon">⏱</span>
+        <div class="wcard-title">Работа без спешки</div>
+        <p class="wcard-text">Работа от 30 минут. Без конвейера и торопливости — успеваю всё проверить и сделать аккуратно.</p>
+      </div>
+      <div class="wcard">
+        <span class="wcard-icon">✨</span>
+        <div class="wcard-title">Индивидуальная форма</div>
+        <p class="wcard-text">Подбираю форму под ваши пальцы и ногтевую пластину. Не делаю «одинаково всем».</p>
+      </div>
+      <div class="wcard">
+        <span class="wcard-icon">💎</span>
+        <div class="wcard-title">Качественные материалы</div>
+        <p class="wcard-text">Работаю с проверенными брендами — Luxio, Kodi и другими профессиональными линейками. Покрытие держится 3–4 недели.</p>
       </div>
     </div>
   </div>
@@ -1126,6 +1214,11 @@
   <p>© 2026 Лиля.Маникюр · Воронеж, ул. Суворова 122Б (домашний кабинет) ·
      <a href="https://t.me/nail_master_vrn_bot">@nail_master_vrn_bot</a> ·
      <a href="tel:+79081341660">+7 908 134 1660</a>
+  </p>
+  <p style="margin-top:8px;">
+    <a href="privacy.html" style="color:var(--rose); text-decoration:underline; font-size:0.85em;">
+      Политика конфиденциальности
+    </a>
   </p>
 </footer>
 
